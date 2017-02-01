@@ -7,7 +7,7 @@ import os
 
 logger = None
 
-# TODO: Pass in credentials for security
+# TODO: Pass in credentials at runtime for security
 username = "BinaryAsciiBot"
 password = "<redacted>"
 
@@ -39,7 +39,7 @@ def setup_logging():
 
 
 def reddit_login():
-    """Log into Reddit using the desired bot credentials."""
+    """Log into Reddit using the PRAW package with the desired bot credentials."""
     r = praw.Reddit(user_agent="PRAW:BinaryBot:0.1 (by /u/<redacted>)")
     logger.info("Logging in with credentials %s // %s" % (username, password))
     r.login(username, password)
