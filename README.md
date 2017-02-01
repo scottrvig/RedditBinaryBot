@@ -8,5 +8,7 @@ The bot is very primitive, but could easily be extended and made more flexible.
 Run instructions:
 
 $ pip install praw
+
 $ pip install binascii
+
 $ python binary_boy.py
